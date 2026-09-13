@@ -1,0 +1,23 @@
+# Assignment brief must not be uploaded (Part 2 requirement 7)
+Data Engineering Technical Test.pdf
+
+# Duplicate of data/raw after extract — keep one copy of the source CSVs in git
+ResaleFlatPrices/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.env
+.mplconfig/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# OS
+.DS_Store

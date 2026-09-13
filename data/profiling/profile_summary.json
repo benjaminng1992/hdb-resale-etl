@@ -1,0 +1,541 @@
+{
+  "row_count": 92544,
+  "column_count": 12,
+  "columns": [
+    "month",
+    "town",
+    "flat_type",
+    "block",
+    "street_name",
+    "storey_range",
+    "floor_area_sqm",
+    "flat_model",
+    "lease_commence_date",
+    "remaining_lease",
+    "resale_price",
+    "source_file"
+  ],
+  "month_min": "2012-01",
+  "month_max": "2016-12",
+  "nunique_months": 60,
+  "source_counts": [
+    {
+      "source_file": "Resale Flat Prices (Based on Registration Date), From Mar 2012 to Dec 2014.csv",
+      "rows": 52203
+    },
+    {
+      "source_file": "Resale Flat Prices (Based on Registration Date), From Jan 2015 to Dec 2016.csv",
+      "rows": 37153
+    },
+    {
+      "source_file": "Resale Flat Prices (Based on Approval Date), 2000 - Feb 2012.csv",
+      "rows": 3188
+    }
+  ],
+  "columns_profile": {
+    "month": {
+      "dtype": "string",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "nunique": 60,
+      "sample_values": [
+        "2012-03",
+        "2012-05",
+        "2012-07",
+        "2012-04",
+        "2012-08",
+        "2012-06",
+        "2012-10",
+        "2016-08"
+      ]
+    },
+    "town": {
+      "dtype": "string",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "nunique": 26,
+      "sample_values": [
+        "JURONG WEST",
+        "WOODLANDS",
+        "TAMPINES",
+        "BEDOK",
+        "YISHUN",
+        "SENGKANG",
+        "HOUGANG",
+        "ANG MO KIO"
+      ]
+    },
+    "flat_type": {
+      "dtype": "string",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "nunique": 7,
+      "sample_values": [
+        "4 ROOM",
+        "3 ROOM",
+        "5 ROOM",
+        "EXECUTIVE",
+        "2 ROOM",
+        "1 ROOM",
+        "MULTI-GENERATION"
+      ]
+    },
+    "block": {
+      "dtype": "string",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "nunique": 2139,
+      "sample_values": [
+        "2",
+        "1",
+        "108",
+        "107",
+        "113",
+        "4",
+        "110",
+        "101"
+      ]
+    },
+    "street_name": {
+      "dtype": "string",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "nunique": 522,
+      "sample_values": [
+        "YISHUN RING RD",
+        "BEDOK RESERVOIR RD",
+        "ANG MO KIO AVE 10",
+        "ANG MO KIO AVE 3",
+        "HOUGANG AVE 8",
+        "JURONG WEST ST 65",
+        "CHOA CHU KANG CRES",
+        "BEDOK NTH RD"
+      ]
+    },
+    "storey_range": {
+      "dtype": "string",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "nunique": 25,
+      "sample_values": [
+        "04 TO 06",
+        "07 TO 09",
+        "01 TO 03",
+        "10 TO 12",
+        "13 TO 15",
+        "16 TO 18",
+        "01 TO 05",
+        "06 TO 10"
+      ]
+    },
+    "floor_area_sqm": {
+      "dtype": "float64",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "nunique": 168,
+      "min": 31.0,
+      "max": 280.0,
+      "mean": 96.56911523167358
+    },
+    "flat_model": {
+      "dtype": "string",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "nunique": 20,
+      "sample_values": [
+        "Model A",
+        "Improved",
+        "New Generation",
+        "Premium Apartment",
+        "Simplified",
+        "Apartment",
+        "Standard",
+        "Maisonette"
+      ]
+    },
+    "lease_commence_date": {
+      "dtype": "int64",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "nunique": 48,
+      "min": 1966.0,
+      "max": 2013.0,
+      "mean": 1990.0727005532503
+    },
+    "remaining_lease": {
+      "dtype": "object",
+      "nulls": 55391,
+      "null_pct": 59.85,
+      "nunique": 50,
+      "sample_values": [
+        "68",
+        "67",
+        "69",
+        "71",
+        "84",
+        "70",
+        "81",
+        "80"
+      ]
+    },
+    "resale_price": {
+      "dtype": "float64",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "nunique": 2615,
+      "min": 190000.0,
+      "max": 1150000.0,
+      "mean": 450938.9717304202
+    },
+    "source_file": {
+      "dtype": "str",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "nunique": 3,
+      "sample_values": [
+        "Resale Flat Prices (Based on Registration Date), From Mar 2012 to Dec 2014.csv",
+        "Resale Flat Prices (Based on Registration Date), From Jan 2015 to Dec 2016.csv",
+        "Resale Flat Prices (Based on Approval Date), 2000 - Feb 2012.csv"
+      ]
+    }
+  },
+  "raw_file_schemas": {
+    "Resale Flat Prices (Based on Approval Date), 1990 - 1999.csv": {
+      "rows": 287196,
+      "columns": [
+        "month",
+        "town",
+        "flat_type",
+        "block",
+        "street_name",
+        "storey_range",
+        "floor_area_sqm",
+        "flat_model",
+        "lease_commence_date",
+        "resale_price",
+        "source_file"
+      ]
+    },
+    "Resale Flat Prices (Based on Approval Date), 2000 - Feb 2012.csv": {
+      "rows": 369651,
+      "columns": [
+        "month",
+        "town",
+        "flat_type",
+        "block",
+        "street_name",
+        "storey_range",
+        "floor_area_sqm",
+        "flat_model",
+        "lease_commence_date",
+        "resale_price",
+        "source_file"
+      ]
+    },
+    "Resale Flat Prices (Based on Registration Date), From Jan 2015 to Dec 2016.csv": {
+      "rows": 37153,
+      "columns": [
+        "month",
+        "town",
+        "flat_type",
+        "block",
+        "street_name",
+        "storey_range",
+        "floor_area_sqm",
+        "flat_model",
+        "lease_commence_date",
+        "remaining_lease",
+        "resale_price",
+        "source_file"
+      ]
+    },
+    "Resale Flat Prices (Based on Registration Date), From Mar 2012 to Dec 2014.csv": {
+      "rows": 52203,
+      "columns": [
+        "month",
+        "town",
+        "flat_type",
+        "block",
+        "street_name",
+        "storey_range",
+        "floor_area_sqm",
+        "flat_model",
+        "lease_commence_date",
+        "resale_price",
+        "source_file"
+      ]
+    },
+    "Resale flat prices based on registration date from Jan-2017 onwards.csv": {
+      "rows": 240345,
+      "columns": [
+        "month",
+        "town",
+        "flat_type",
+        "block",
+        "street_name",
+        "storey_range",
+        "floor_area_sqm",
+        "flat_model",
+        "lease_commence_date",
+        "remaining_lease",
+        "resale_price",
+        "source_file"
+      ]
+    }
+  },
+  "jan2012_reference_sizes": {
+    "town": 26,
+    "flat_type": 7,
+    "flat_model": 13,
+    "storey_range": 12,
+    "month_format": 1
+  },
+  "month_counts": [
+    {
+      "month": "2012-01",
+      "rows": 1559
+    },
+    {
+      "month": "2012-02",
+      "rows": 1629
+    },
+    {
+      "month": "2012-03",
+      "rows": 2360
+    },
+    {
+      "month": "2012-04",
+      "rows": 2155
+    },
+    {
+      "month": "2012-05",
+      "rows": 2323
+    },
+    {
+      "month": "2012-06",
+      "rows": 1993
+    },
+    {
+      "month": "2012-07",
+      "rows": 2179
+    },
+    {
+      "month": "2012-08",
+      "rows": 2075
+    },
+    {
+      "month": "2012-09",
+      "rows": 1760
+    },
+    {
+      "month": "2012-10",
+      "rows": 1937
+    },
+    {
+      "month": "2012-11",
+      "rows": 1735
+    },
+    {
+      "month": "2012-12",
+      "rows": 1493
+    },
+    {
+      "month": "2013-01",
+      "rows": 1633
+    },
+    {
+      "month": "2013-02",
+      "rows": 886
+    },
+    {
+      "month": "2013-03",
+      "rows": 1306
+    },
+    {
+      "month": "2013-04",
+      "rows": 1692
+    },
+    {
+      "month": "2013-05",
+      "rows": 1605
+    },
+    {
+      "month": "2013-06",
+      "rows": 1317
+    },
+    {
+      "month": "2013-07",
+      "rows": 1484
+    },
+    {
+      "month": "2013-08",
+      "rows": 1354
+    },
+    {
+      "month": "2013-09",
+      "rows": 1212
+    },
+    {
+      "month": "2013-10",
+      "rows": 1391
+    },
+    {
+      "month": "2013-11",
+      "rows": 1209
+    },
+    {
+      "month": "2013-12",
+      "rows": 1008
+    },
+    {
+      "month": "2014-01",
+      "rows": 1098
+    },
+    {
+      "month": "2014-02",
+      "rows": 959
+    },
+    {
+      "month": "2014-03",
+      "rows": 1444
+    },
+    {
+      "month": "2014-04",
+      "rows": 1557
+    },
+    {
+      "month": "2014-05",
+      "rows": 1447
+    },
+    {
+      "month": "2014-06",
+      "rows": 1223
+    },
+    {
+      "month": "2014-07",
+      "rows": 1352
+    },
+    {
+      "month": "2014-08",
+      "rows": 1329
+    },
+    {
+      "month": "2014-09",
+      "rows": 1472
+    },
+    {
+      "month": "2014-10",
+      "rows": 1560
+    },
+    {
+      "month": "2014-11",
+      "rows": 1351
+    },
+    {
+      "month": "2014-12",
+      "rows": 1304
+    },
+    {
+      "month": "2015-01",
+      "rows": 1250
+    },
+    {
+      "month": "2015-02",
+      "rows": 1151
+    },
+    {
+      "month": "2015-03",
+      "rows": 1348
+    },
+    {
+      "month": "2015-04",
+      "rows": 1630
+    },
+    {
+      "month": "2015-05",
+      "rows": 1567
+    },
+    {
+      "month": "2015-06",
+      "rows": 1706
+    },
+    {
+      "month": "2015-07",
+      "rows": 1551
+    },
+    {
+      "month": "2015-08",
+      "rows": 1449
+    },
+    {
+      "month": "2015-09",
+      "rows": 1498
+    },
+    {
+      "month": "2015-10",
+      "rows": 1748
+    },
+    {
+      "month": "2015-11",
+      "rows": 1470
+    },
+    {
+      "month": "2015-12",
+      "rows": 1412
+    },
+    {
+      "month": "2016-01",
+      "rows": 1280
+    },
+    {
+      "month": "2016-02",
+      "rows": 1200
+    },
+    {
+      "month": "2016-03",
+      "rows": 1655
+    },
+    {
+      "month": "2016-04",
+      "rows": 1824
+    },
+    {
+      "month": "2016-05",
+      "rows": 1829
+    },
+    {
+      "month": "2016-06",
+      "rows": 1827
+    },
+    {
+      "month": "2016-07",
+      "rows": 1572
+    },
+    {
+      "month": "2016-08",
+      "rows": 1882
+    },
+    {
+      "month": "2016-09",
+      "rows": 1668
+    },
+    {
+      "month": "2016-10",
+      "rows": 1678
+    },
+    {
+      "month": "2016-11",
+      "rows": 1580
+    },
+    {
+      "month": "2016-12",
+      "rows": 1378
+    }
+  ],
+  "identifier_uniqueness": {
+    "cleaned_rows": 76959,
+    "distinct_resale_identifier": 66258,
+    "identifier_collisions": 10701,
+    "distinct_hashed_record_id": 76959
+  }
+}
